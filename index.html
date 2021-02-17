@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Social Media Survey Form</h1>
+                <p id="description" class="description text-center">Thank you for taking the time to fill out this form</p>
+            </header>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="15" max="40" class="form-control" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>Social media that you use often?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select Social Media</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="telegram">Telegram</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="line">Line</option>
+                        <option value="tiktok">Tiktok</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How many years have you been using social media?</p>
+                    <label>
+                        <input name="user-recommend" value="kurang-dari-1-tahun" type="radio" class="input-radio" checked> < 1 tahun
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="1-tahun" type="radio" class="input-radio" checked>1 tahun
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="lebih-dari-1-tahun" type="radio" class="input-radio" checked> > 1 tahun
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="2-tahun" type="radio" class="input-radio" checked> 2 tahun
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Social media do you have?</p>
+                    <label>
+                        <input name="prefer" value="instagram" type="checkbox" class="input-checkbox">Instagram
+                    </label>
+                    <label>
+                        <input name="prefer" value="twitter" type="checkbox" class="input-checkbox">Twitter
+                    </label>
+                    <label>
+                        <input name="prefer" value="whatsapp" type="checkbox" class="input-checkbox">WhatsApp
+                    </label>
+                    <label>
+                        <input name="prefer" value="telegram" type="checkbox" class="input-checkbox">Telegram
+                    </label>
+                    <label>
+                        <input name="prefer" value="facebook" type="checkbox" class="input-checkbox">Facebook
+                    </label>
+                    <label>
+                        <input name="prefer" value="tiktok" type="checkbox" class="input-checkbox">Tiktok
+                    </label>
+                    <label>
+                        <input name="prefer" value="line" type="checkbox" class="input-checkbox">Line
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestion?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here ..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
